@@ -2,11 +2,12 @@
 
 <form novalidate class="simple-form">
     Name: <input type="text" ng-model="user.name" /><br />
-    E-mail: <input type="email" ng-model="user.email" /><br />
+    <div>
     Class:<br />
-    <input type="radio" ng-model="user.gender" value="warlock" />Warlock<br />
-    <input type="radio" ng-model="user.gender" value="paladin" />Paladin<br />
-    <input type="radio" ng-model="user.gender" value="mage" />Mage<br />
-    <input type="radio" ng-model="user.gender" value="druid" />Druid<br />
-    <input type="submit" ng-click="someAwesomeFunction(user)" value="Save" />
+        <input type="radio" ng-model="user.class" value="warlock" /> Warlock<br />
+        <input type="radio" ng-model="user.class" value="paladin" /> Paladin<br />
+        <input type="radio" ng-model="user.class" value="mage" /> Mage<br />
+        <input type="radio" ng-model="user.class" value="druid" /> Druid<br />
+    </div>
+    <input type="submit" ng-click="someAwesomeFunction()" value="Save" />
 </form>
